@@ -16,10 +16,15 @@ The Road.csv dataset has 31 features with Target column as the Severity_level (F
 ## 🔧 Data Preprocessing
 
 To handle categorical and numerical data effectively, the following steps were applied:
+
 ✔ Handled Missing values 
+
 ✔ **Label Encoding** for categorical features  
+
 ✔ **Feature Scaling** using MinMaxScaler
+
 ✔ The dataset was highly imbalanced, it was balanced using SMOTE (Synthethic Minority Oversampling Technique)
+
 ✔ **Feature Selection** using SelectFromModel and selected 20 features
 
 ---
