@@ -9,7 +9,7 @@ This system aims to support **road safety authorities** and **emergency responde
 
 **Source:** https://www.kaggle.com/datasets/s3programmer/road-accident-severity-in-india
 - The data set has been prepared from manual records of road traffic accidents for the years 2017–22.
-The Road.csv dataset has 31 features with Target column as the Severity_level (Fatal, Serious, Slight) and 12316 instances of the accident.
+- The Road.csv dataset has **31** features with Target column as the **Severity_level (Fatal, Serious, Slight)** and **12316** instances of the accident.
 
 ---
 
