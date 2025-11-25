@@ -39,8 +39,10 @@ Through this two-tiered approach, the model effectively balances precision and r
 
 ## 🖥️ Model Deployment
 Web app is created using Streamlit.
-Try the Traffic Accident Severity Prediction
-**👉 Live app :** https://accidentseverityprediction-q359fmaepzh92mhc45zvks.streamlit.app/
+
+Try the Traffic Accident Severity Prediction:
+
+**👉 Live app :**[Click here] https://accidentseverityprediction-q359fmaepzh92mhc45zvks.streamlit.app/
 
 ---
 
