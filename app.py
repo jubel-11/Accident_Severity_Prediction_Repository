@@ -2,6 +2,9 @@ import streamlit as st
 import pickle
 import pandas as pd
 import base64
+import os
+
+MODEL_DIR ="model"
 
 # ========== PAGE CONFIG ==========
 st.set_page_config(page_title="Traffic Accident Severity Prediction",
@@ -12,13 +15,13 @@ st.set_page_config(page_title="Traffic Accident Severity Prediction",
 @st.cache_resource
 def load_stage_models():
     """Cache both stage models so they don't reload every click."""
-    with open("xgb_fatal_notfatal.pkl", "rb") as f1:
+    with open(os.path.join(MODEL_DIR,"xgb_fatal_notfatal.pkl"), "rb") as f1:
         stage1_model = pickle.load(f1)
-    with open("xgb_serious_slight.pkl", "rb") as f2:
+    with open(os.path.join(MODEL_DIR,"xgb_serious_slight.pkl"), "rb") as f2:
         stage2_model = pickle.load(f2)
-    with open("encoders.pkl", "rb") as f3:
+    with open(os.path.join(MODEL_DIR,"encoders.pkl"), "rb") as f3:
         encoders = pickle.load(f3)
-    with open("scaler.pkl", "rb") as f4:
+    with open(os.path.join(MODEL_DIR,"scaler.pkl"), "rb") as f4:
         scaler = pickle.load(f4)
     return stage1_model, stage2_model, encoders, scaler
 
@@ -66,7 +69,7 @@ if page == "Home":
             unsafe_allow_html=True
         )
 
-    add_bg_from_local("Traffic.jpg")
+    add_bg_from_local("assets/Traffic.jpg")
 
     # White centered title text
     st.markdown(
