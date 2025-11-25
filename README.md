@@ -47,7 +47,7 @@ Web app is created using Streamlit.
 
 Try the Traffic Accident Severity Prediction:
 
-**👉 Live app :**[Click here] https://accidentseverityprediction-q359fmaepzh92mhc45zvks.streamlit.app/
+**👉 Live app :**[Click here] (https://accidentseverityprediction-q359fmaepzh92mhc45zvks.streamlit.app/)
 
 ---
 
